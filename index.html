@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartão de Visita</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #0b1f3a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+    }
+    .card h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      color: #0b1f3a;
+    }
+    .card .crm {
+      color: #6ba7e0;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .card p.desc {
+      margin: 0.6rem 0 1rem 0;
+      color: #333;
+    }
+    .links a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      background-color: #dddddd;
+      color: #222;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+    .links a.tel-link {
+      background-color: #bbbbbb;
+    }
+    .links a:hover {
+      opacity: 0.9;
+    }
+    .qr-slot {
+      margin-top: 20px;
+    }
+    .qr-slot img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+    .qr-slot p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1><!-- NOME AQUI -->Derek Bevilacqua Silva</h1>
+    <p class="crm"><!-- 259919-SP -->CRM 123456-SP</p>
+    <p class="desc"><!-- DESCRIÇÃO AQUI -->Medico Generalista.<br>
+Pós em Nutrologia clinica, hospitalar e esportiva.<br> 
+Foco em bem estar e envelhecimento saudável
+</p>
+    <div class="links">
+      <a class="tel-link" href="tel:+551199666-3246">📞 Adicionar Contato</a>
+      <a href="https://wa.me/qr/Z7VBD7HETI5RN1" target="_blank">💬 Conversar no WhatsApp</a>
+    </div>
+    <div class="qr-slot">
+      <!-- ADICIONE AQUI A IMAGEM DO QRCODE -->
+      <!-- Exemplo: <img src="qrcode-whatsapp.jpeg" alt="QR Code do WhatsApp"> -->
+      <p>Escaneie para iniciar conversa</p>
+    </div>
+  </div>
+</body>
+</html>
